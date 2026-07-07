@@ -22,10 +22,12 @@ let questionCounter = numberOfQuestions;
 
 for(let i = questionArray.length-1; i >=0; i--){
     questionCounter--;
-    const input = prompt (questionArray[questionCounter]);
+const input = prompt (questionArray[questionCounter] + `... (${questionCounter})`);
     userInputs.push(input);
     console.log(userInputs + ` (${questionCounter} questions left)`);
+
 }
+alert("All done! Ready for your totally accurate, not-at-all confusing little fable?")
 
 
 

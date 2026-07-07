@@ -24,8 +24,7 @@ for(let i = questionArray.length-1; i >=0; i--){
     questionCounter--;
     const input = prompt (questionArray[questionCounter]);
     userInputs.push(input);
-    console.log(userInputs);
-    console.log(i," ", questionCounter);
+    console.log(userInputs + ` (${questionCounter} questions left)`);
 }
 
 

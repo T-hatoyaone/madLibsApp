@@ -14,13 +14,12 @@ for(let i = newArray.length-1; i >=0; i--){
  questionCounter--;
  const input = prompt (newArray[questionCounter] + `... (${questionCounter})`);
  
-if(input===""){
+if(input==="null"){
     console.log("You did not enter a text!")
 }else {
     userInputs.push(input);
  console.log(userInputs + ` (${questionCounter} questions left)`);
 }
-
 }
 alert("All done! Ready for your totally accurate, not-at-all confusing little fable?")
 let originalStory = `One sunny ${userInputs[4]}, a ${userInputs[0]} lay sleeping in the grass.
@@ -35,7 +34,7 @@ let originalStory = `One sunny ${userInputs[4]}, a ${userInputs[0]} lay sleeping
  the ${userInputs[1]}, realizing that even the smallest friends can be of great help.`;
 
  console.log(originalStory);
-
+document.write(originalStory);
 
 
 

@@ -4,6 +4,20 @@ let userInputs = [];
 // index1[0] = Lion, index2[1] = Mouse, index3[2] = adverb, index4[3] = adjective 
 // index5[4] = noun, index6[5] = verb 
 
+
+let numberOfQuestions= 6;
+let questionArray= ["Enter any big animal name: ", "Enter name for a smaller one: ", "Enter an adverb: ", "Enter an adjective: ",
+     "Enter a noun: ", "Enter a verb: "];
+let questionCounter = numberOfQuestions;
+let newArray = questionArray.toReversed();
+for(let i = newArray.length-1; i >=0; i--){
+    questionCounter--;
+const input = prompt (newArray[questionCounter] + `... (${questionCounter})`);
+    userInputs.push(input);
+    console.log(userInputs + ` (${questionCounter} questions left)`);
+
+}
+alert("All done! Ready for your totally accurate, not-at-all confusing little fable?")
 let originalStory = `One sunny ${userInputs[4]}, a ${userInputs[0]} lay sleeping in the grass.
  A tiny ${userInputs[1]}, scurrying by, ${userInputs[2]} ran right over the ${userInputs[0]}'s nose, waking him up.
  The ${userInputs[3]} ${userInputs[0]} pinned the squeaking ${userInputs[1]} down with his massive paw, ready to ${userInputs[5]} him.
@@ -15,20 +29,7 @@ let originalStory = `One sunny ${userInputs[4]}, a ${userInputs[0]} lay sleeping
  thick ropes of the net one by one until the ${userInputs[0]} was free. The ${userInputs[0]} smiled and thanked
  the ${userInputs[1]}, realizing that even the smallest friends can be of great help.`;
 
-let numberOfQuestions= 6;
-let questionArray= ["Enter any big animal name: ", "Enter name for a smaller one: ", "Enter an adverb: ", "Enter an adjective: ",
-     "Enter a noun: ", "Enter a verb: "];
-let questionCounter = numberOfQuestions;
-
-for(let i = questionArray.length-1; i >=0; i--){
-    questionCounter--;
-const input = prompt (questionArray[questionCounter] + `... (${questionCounter})`);
-    userInputs.push(input);
-    console.log(userInputs + ` (${questionCounter} questions left)`);
-
-}
-alert("All done! Ready for your totally accurate, not-at-all confusing little fable?")
-
+ console.log(originalStory);
 
 
 

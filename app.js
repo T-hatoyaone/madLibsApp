@@ -16,7 +16,17 @@ let originalStory = `One sunny ${userInputs[4]}, a ${userInputs[0]} lay sleeping
  the little ${userInputs[1]} rushed over. Seeing his friend trapped, the ${userInputs[1]} chewed through the 
  thick ropes of the net one by one until the ${userInputs[0]} was free. The ${userInputs[0]} smiled and thanked
  the ${userInputs[1]}, realizing that even the smallest friends can be of great help.`;
-
+let numberOfQuestions= 6;
+let questionArray= ["Enter a name: ", "Enter a name: ", "Enter an adverb: ", "Enter an adjective: ",
+     "Enter a noun: ", "Enter a verb: "];
+     let questionCounter = 0;
+for(let i = questionArray.length-1; i >=0; i--){
+    const input = prompt (questionArray[i]);
+    userInputs.push(input);
+    console.log(userInputs);
+    questionCounter++;
+    console.log(i," ", questionCounter);
+}
 
 
 

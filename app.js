@@ -11,10 +11,15 @@ let questionArray= ["Enter any big animal name: ", "Enter name for a smaller one
 let questionCounter = numberOfQuestions;
 let newArray = questionArray.toReversed();
 for(let i = newArray.length-1; i >=0; i--){
-    questionCounter--;
-const input = prompt (newArray[questionCounter] + `... (${questionCounter})`);
+ questionCounter--;
+ const input = prompt (newArray[questionCounter] + `... (${questionCounter})`);
+ 
+if(input===""){
+    console.log("You did not enter a text!")
+}else {
     userInputs.push(input);
-    console.log(userInputs + ` (${questionCounter} questions left)`);
+ console.log(userInputs + ` (${questionCounter} questions left)`);
+}
 
 }
 alert("All done! Ready for your totally accurate, not-at-all confusing little fable?")

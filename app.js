@@ -14,10 +14,12 @@ for(let i = newArray.length-1; i >=0; i--){
  questionCounter--;
  const input = prompt (newArray[questionCounter] + `... (${questionCounter})`);
  
-if(input==="null"){
+if(input.trim() === null|| input.trim()==="" ){
     console.log("You did not enter a text!")
+    break;
+
 }else {
-    userInputs.push(input);
+    userInputs.push(input); 
  console.log(userInputs + ` (${questionCounter} questions left)`);
 }
 }
